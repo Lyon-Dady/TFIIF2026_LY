@@ -1,0 +1,89 @@
+.ly-warning-page{min-width:0;color:#1d2129;font:14px "Microsoft YaHei",Arial,sans-serif}
+.ly-warning-page-tabs{display:flex;align-items:center;margin:0 0 10px;border-bottom:1px solid #e5e8ef;background:#fff;padding:0 16px;min-height:42px}
+.ly-warning-page-tabs button{background:none;border:0;border-bottom:2px solid #165dff;color:#165dff;padding:11px 4px;font:inherit;cursor:pointer}
+.ly-warning-page .canvas-toolbar>.ant-space:first-child{visibility:hidden}
+.ly-warning-page .canvas-toolbar{position:relative}
+.ly-warning-page .canvas-toolbar:before{content:"应用创建中心 / 智能模型-新增算子 / 开关量预警算子";position:absolute;left:16px;font-size:12px;color:#4e5969}
+.ly-warning-page .hotspot{align-items:stretch;justify-content:stretch}
+.ly-warning-toolbox-bottom{width:100%;height:100%;overflow-y:auto;background:#fafbfc;border-radius:0 0 7px 7px;scrollbar-width:thin;scrollbar-color:#d5dae3 transparent}
+.ly-warning-entry-area{height:50px;width:100%;background:#fafbfc;padding:3px 13px}
+.ly-warning-original-categories{width:100%;height:173px;background-repeat:no-repeat;background-size:1907px 910px;background-position:-1526px -699px;pointer-events:none}
+.ly-warning-toolbox-item{display:flex;align-items:center;gap:10px;width:161px;height:44px;border:1px solid transparent;background:#efeff3;color:#1d2129;border-radius:3px;font:14px "Microsoft YaHei",sans-serif;padding:0 11px;cursor:grab;text-align:left;white-space:nowrap}
+.ly-warning-toolbox-item:hover{border-color:#99bdff;background:#eaf1ff;color:#165dff}
+.ly-warning-toolbox-item:active{cursor:grabbing}
+.ly-warning-toolbox-item:focus-visible,.ly-warning-node-body:focus-visible{outline:2px solid #165dff;outline-offset:2px}
+.ly-warning-function-icon{display:inline-flex;align-items:center;justify-content:center;width:15px;height:14px;font:700 17px Consolas;color:#6282ae;text-shadow:2px 2px #b4dcf2;flex-shrink:0}
+.ly-warning-dropzone{position:relative;width:100%;height:100%}
+.ly-warning-dropzone.drag-over{outline:2px dashed #8cb6ff;outline-offset:-4px;background:#165dff05}
+.ly-warning-drop-hint{position:absolute;left:50%;top:70%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:8px;background:#fff;color:#165dff;padding:12px 20px;border-radius:5px;border:1px dashed #8cb6ff;pointer-events:none;z-index:4;box-shadow:0 3px 12px #165dff10}
+.ly-warning-wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.ly-warning-wires>path{fill:none;stroke:#80a6ff;stroke-width:1.5}
+.ly-warning-node{position:absolute;width:224px;border:1px solid transparent;border-radius:9px;background:#fff;box-shadow:0 3px 9px #1d212910;color:#1d2129}
+.ly-warning-node.selected{border-color:#2864ff;box-shadow:0 2px 7px #165dff15}
+.ly-warning-node-heading{height:26px;display:flex;align-items:center;gap:4px;border-radius:8px 8px 0 0;background:linear-gradient(100deg,#00bbd9,#00deb6);color:#fff;font-size:13px;padding:0 15px;cursor:grab;touch-action:none;user-select:none}
+.ly-warning-node-heading:active{cursor:grabbing}
+.ly-warning-node-heading .ly-warning-function-icon{color:#fff;font-size:15px;text-shadow:1px 1px #548bd1}
+.ly-warning-node-body{display:block;width:100%;padding:11px 5px 8px;background:white;border:0;border-radius:0 0 8px 8px;color:#1d2129;font:13px "Microsoft YaHei",sans-serif;cursor:pointer;text-align:center}
+.ly-warning-node-body>strong{display:block;margin:0 6px 13px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:20px;font-size:14px}
+.ly-warning-node-ports{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.ly-warning-node-ports>div{background:#f6f7fa;border-radius:4px;padding:7px 5px 5px;min-width:0}
+.ly-warning-node-ports>div>span{color:#3471ff;display:block;line-height:20px;margin-bottom:6px}
+.ly-warning-node-ports>div+div>span{color:#00a7b7}
+.ly-warning-node-ports em{display:block;background:#e0e9ff;color:#165dff;font-style:normal;padding:8px 3px;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ly-warning-node-ports>div+div em{background:#def4f5;color:#00a7b7}
+.ly-warning-node-ports em.unconfigured{background:#fff0ed;color:#fa6158}
+.ly-warning-node-body>small{display:block;color:#86909c;font-size:11px;padding-top:8px;line-height:15px}
+.ly-warning-port{position:absolute;width:10px;height:10px;background:#fff;border:2px solid #bdc5ce;border-radius:50%;pointer-events:none}
+.ly-warning-port.port-top{left:calc(50% - 5px);top:-6px}.ly-warning-port.port-left{left:-6px;top:86px}.ly-warning-port.port-right{right:-6px;top:86px}
+.ly-warning-port-label{position:absolute;font-size:14px;color:#86909c;white-space:nowrap;pointer-events:none}
+.ly-warning-port-label.label-top{top:-33px;left:calc(50% - 28px)}.ly-warning-port-label.label-left{right:calc(100% + 14px);top:82px}.ly-warning-port-label.label-right{left:calc(100% + 14px);top:82px}
+.ly-warning-properties{width:100%;height:100%;display:flex;flex-direction:column;background:#fafbfc;border-radius:9px;box-shadow:0 4px 18px #1d212909;overflow:hidden;font-size:14px;color:#1d2129}
+.ly-warning-properties>header{height:54px;flex-shrink:0;padding:0 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e6eb}
+.ly-warning-properties>header>strong{font-size:18px;font-weight:600}
+.ly-warning-properties>header .ant-btn{color:#86909c;width:26px;min-width:26px;height:26px;font-size:13px;padding:0}
+.ly-warning-properties-scroll{min-height:0;flex:1;overflow-y:auto;padding:18px 18px 6px;scrollbar-width:thin;scrollbar-color:#ccd2dc transparent}
+.ly-warning-field{margin-bottom:22px}
+.ly-warning-label{display:flex;align-items:center;gap:4px;color:#5e626a;font-size:14px;line-height:20px;margin-bottom:8px}
+.ly-warning-required{color:#f53f3f}
+.ly-warning-properties .field-label{font-size:14px;gap:6px}
+.ly-warning-properties .field-help{font-size:14px;color:#a8b0be}
+.ly-warning-properties .ant-input,.ly-warning-properties .ant-input-number,.ly-warning-properties .ant-select .ant-select-selector{border:1px solid transparent!important;border-radius:4px!important;background:#f1f2f6!important;box-shadow:none!important;font-size:14px!important}
+.ly-warning-properties .ant-input{height:36px;padding:6px 12px}
+.ly-warning-properties .ant-input:hover,.ly-warning-properties .ant-input-number:hover,.ly-warning-properties .ant-select:hover .ant-select-selector{border-color:#91b3ff!important}
+.ly-warning-properties .ant-input:focus,.ly-warning-properties .ant-input-number-focused,.ly-warning-properties .ant-select-focused .ant-select-selector{border-color:#165dff!important}
+.ly-warning-properties .ant-select{display:block;width:100%;height:36px;font-size:14px}
+.ly-warning-properties .ant-select-selection-item{line-height:34px!important}
+.ly-warning-properties .ant-input-number-input{height:34px;font-size:14px;padding:0 12px}
+.ly-warning-properties .ant-radio-wrapper{font-size:14px;margin-inline-end:30px}
+.ly-warning-time-input{display:flex;width:100%;height:36px;background:#f1f2f6;border-radius:4px}
+.ly-warning-time-input>.ant-input-number{flex:1;min-width:0;width:auto}
+.ly-warning-time-input>.ant-select{width:74px;flex-shrink:0;position:relative}
+.ly-warning-time-input>.ant-select:before{content:"";position:absolute;left:0;top:10px;height:16px;border-left:1px solid #cdd1da;z-index:1}
+.ly-warning-time-input>.ant-select .ant-select-selector{padding-inline:14px 8px!important}
+.ly-warning-threshold{display:flex;align-items:center;background:#f1f2f6;border-radius:4px}
+.ly-warning-threshold>.ant-select{width:64px;flex-shrink:0}
+.ly-warning-threshold>.ant-input-number{flex:1;min-width:0;width:auto}
+.ly-warning-threshold>span{padding:0 13px;color:#4e5969}
+.ly-warning-source{display:flex;align-items:center;gap:3px;background:#f1f2f6;border-radius:4px}
+.ly-warning-source>button:first-child{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-width:0;flex:1;height:36px;border:1px solid transparent;border-radius:4px;background:transparent;color:#86909c;font:14px "Microsoft YaHei",sans-serif;padding:0 12px;cursor:pointer;text-align:left}
+.ly-warning-source>button:first-child>span:first-child{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.ly-warning-source>button:first-child>span:last-child{font-weight:700;letter-spacing:1px}
+.ly-warning-source>button:first-child:not(:disabled):hover{border-color:#91b3ff}
+.ly-warning-source>button.upstream{color:#b1b6c1;cursor:default}
+.ly-warning-source>.ant-btn{width:25px;min-width:25px;height:28px;font-size:12px;padding:0;margin-right:4px;color:#86909c}
+.ly-warning-source-info{font-size:11px;color:#86909c;line-height:18px;margin-top:5px;overflow-wrap:anywhere}
+.ly-warning-rule-preview{border-left:2px solid #99baff;background:#f1f5fd;padding:11px 12px;border-radius:0 4px 4px 0;margin:1px 0 10px}
+.ly-warning-rule-preview>span{font-size:12px;color:#86909c}.ly-warning-rule-preview>p{font-size:13px;line-height:22px;color:#4e5969;margin:5px 0 0}
+.ly-warning-advanced .ant-collapse-header{font-size:13px;padding:11px 0!important;color:#606a79!important}
+.ly-warning-advanced .ant-collapse-content-box{padding:5px 0!important}
+.ly-warning-muted{font-size:12px;color:#86909c;line-height:20px;margin:0 0 14px}
+.ly-warning-description{flex-shrink:0;padding:11px 18px;color:#86909c;font-size:12px;line-height:20px;border-top:1px solid #e5e6eb;min-height:62px;max-height:83px}
+.ly-warning-properties>footer{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #e5e6eb;padding:10px 18px;flex-shrink:0;background:#fafbfc}
+.ly-warning-properties>footer .ant-btn{font-size:13px;height:32px;padding:0 12px;border-radius:4px}
+.ly-warning-properties>footer>.ant-btn{padding:0;width:26px;min-width:26px}
+.ly-warning-error{color:#f53f3f;font-size:12px;line-height:18px;margin-top:5px}
+.ly-warning-properties .has-error .ant-input,.ly-warning-properties .has-error .ant-input-number,.ly-warning-properties .has-error .ly-warning-source{border:1px solid #f53f3f!important}
+.ly-warning-input-modal .ant-modal-title{font-size:16px}.ly-warning-input-modal .ant-modal-body{padding-top:18px}
+.ly-warning-input-modal .ant-input-affix-wrapper{margin-bottom:14px}.ly-warning-picker-description{color:#86909c;font-size:13px;line-height:22px;margin:14px 0}
+.ly-warning-picker-selected{display:flex;align-items:center;gap:8px;padding:13px 12px;margin-top:16px;background:#f7f9fc;font-size:13px;color:#4e5969;border-radius:4px}
+@media(max-width:900px){.ly-warning-page .canvas-toolbar:before{content:"开关量预警算子"}}

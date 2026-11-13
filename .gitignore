@@ -1,0 +1,21 @@
+# Dependencies and generated output
+node_modules/
+dist/
+.vite/
+.cache/
+.local/
+coverage/
+*.log
+
+# Local backups and obsolete verification output
+.history/
+/references/卡片视图验收.jpg
+
+# Credentials and machine-specific files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
